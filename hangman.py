@@ -92,6 +92,7 @@ def timer(sec):
         print(f"Time left: {time_left}", end="\r")
         time.sleep(1)
         sec -= 1
+    print()
 
 
 # update the word state
@@ -171,7 +172,7 @@ def hangman_game():
     # Game loop
     while is_working:
         # Draw hangman based on incorrect guesses
-        draw_hangman(incorrect)
+        # draw_hangman(incorrect)
 
         # Display the current state of the word
         display_hint(word)
